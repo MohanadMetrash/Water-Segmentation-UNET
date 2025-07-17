@@ -34,8 +34,8 @@ Below are examples of the model's performance on images from the validation set,
     <td align="center"><b>Sample 2</b></td>
   </tr>
   <tr>
-    <td><img src="Predicted_sample_1.png" width="450"></td>
-    <td><img src="Predicted_sample_2.png" width="450"></td>
+    <td><img src="results/Predicted_sample_1.png" width="450"></td>
+    <td><img src="results/Predicted_sample_2.png" width="450"></td>
   </tr>
 </table>
 
@@ -51,14 +51,14 @@ The training progress over the full 25 epochs demonstrates effective learning an
     <td align="center"><b>Accuracy</b></td>
   </tr>
   <tr>
-    <td><img src="Training_and_validation_loss.png" width="400"></td>
-    <td><img src="Training_and_validation_accuaracy.png" width="400"></td>
+    <td><img src="results/Training_and_validation_loss.png" width="400"></td>
+    <td><img src="results/Training_and_validation_accuaracy.png" width="400"></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><b>Intersection-over-Union (IoU)</b></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="Training_and_validation_IoU.png" width="400"></td>
+    <td colspan="2" align="center"><img src="results/Training_and_validation_IoU.png" width="400"></td>
   </tr>
 </table>
 
@@ -107,7 +107,8 @@ To get this project up and running locally, follow these steps:
 ├── .gitignore          # Specifies files for Git to ignore
 ├── README.md           # This overview file
 ├── requirements.txt    # Required Python packages
-└── train.py            # Main script for all project stages
+├── train.py            # Main script for all project stages
+└── results/            # Contains output images and plots
 ```
 
 ---
