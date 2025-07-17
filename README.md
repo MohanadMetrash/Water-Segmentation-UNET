@@ -86,18 +86,32 @@ To get this project up and running locally, follow these steps:
     ```
 
 ---
+## 📚 Dataset
 
-## ⚙️ Usage
+The model was trained on a custom "Water Segmentation Multispectral Dataset". This dataset consists of 12-channel multispectral satellite images, each with a resolution of 128x128 pixels. Each `.tif` image is paired with a corresponding binary segmentation mask (`.png`) that precisely identifies water bodies.
 
-1.  **Download the Dataset:** You will need to acquire the `Water Segmentation.zip` dataset and place it in a relevant project directory.
+### Data Integrity and Cleaning
 
-2.  **Update Paths:** Modify the paths inside `train.py` to point to your dataset location.
+A crucial step in this project was addressing data inconsistencies. Upon initial inspection, the dataset contained a mismatch between the number of images and their corresponding labels:
 
-3.  **Run the Training Script:**
-    ```bash
-    python train.py
-    ```
-    The script will perform data cleaning, build the U-Net model, train it, and save the best-performing model as `best_water_segmentation_model.keras`.
+-   **Initial Images:** 306 files
+-   **Initial Masks:** 456 files
+
+To resolve this, a data cleaning function was implemented within the `Water_Segmentation_using_Multispectral_and_optical_Data.ipynb` script. This function programmatically identifies and retains only the image-mask pairs with matching base filenames, deleting any orphaned files. This preprocessing step resulted in a clean, synchronized dataset of **306 pairs**, ensuring data integrity for the training pipeline.
+
+### Training and Validation Splits
+
+The cleaned dataset of 306 image-mask pairs was split into training and validation sets using an 80/20 ratio:
+
+-   **Training Set**: 245 images (80%)
+-   **Validation Set**: 61 images (20%)
+
+### How to Get the Data
+
+You can download it directly from the link below.
+
+**[Download Water Segmentation Dataset from Google Drive](https://drive.google.com/drive/folders/1GQss5oZhv-0dxoRtI5m_m_SPbm-E3vXJ)**
+
 
 ---
 
