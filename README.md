@@ -63,29 +63,6 @@ The training progress over the full 25 epochs demonstrates effective learning an
 </table>
 
 ---
-
-## 🚀 Setup and Installation
-
-To get this project up and running locally, follow these steps:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/water-segmentation-unet.git
-    cd water-segmentation-unet
-    ```
-
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-3.  **Install the required dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
----
 ## 📚 Dataset
 
 The model was trained on a custom "Water Segmentation Multispectral Dataset". This dataset consists of 12-channel multispectral satellite images, each with a resolution of 128x128 pixels. Each `.tif` image is paired with a corresponding binary segmentation mask (`.png`) that precisely identifies water bodies.
@@ -115,18 +92,26 @@ You can download it directly from the link below.
 
 ---
 
-## 📂 File Structure
+## 🚀 Setup and Installation
 
-```
-├── .gitignore          # Specifies files for Git to ignore
-├── README.md           # This overview file
-├── requirements.txt    # Required Python packages
-├── train.py            # Main script for all project stages
-└── results/            # Contains output images and plots
-```
+To get this project up and running locally, follow these steps:
 
----
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/MohanadMetrash/Water-Segmentation-UNET.git
+    cd Water-Segmentation-UNET
+    ```
 
-## Acknowledgments
-- Project provided by **Cellula Technologies**.
-- Dataset consists of multispectral satellite imagery from a publicly available source.
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3.  **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+
+
