@@ -89,7 +89,13 @@ You can download it directly from the link below.
 
 **[Download Water Segmentation Dataset from Google Drive](https://drive.google.com/drive/folders/1GQss5oZhv-0dxoRtI5m_m_SPbm-E3vXJ)**
 
+---
 
+## 💾 Pre-Trained Models
+
+You can download the final saved model files directly.
+
+*   **[Download Trained Models from Google Drive](https://drive.google.com/drive/folders/1tHD3kKPrDj6XTKK5xW6NfKhy6vCCRs-O)**
 ---
 
 ## 🚀 Setup and Installation
